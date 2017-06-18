@@ -1,0 +1,15 @@
+n=-4:4;
+x=[-1,0.5,1,0.5,1,1,1,0.5,0];
+subplot(3,1,1);
+stem(n,x);
+xlabel('n'),ylabel('x(n)');
+m=n+2; y=x;
+subplot(3,1,2);
+stem(m,y);
+xlabel('n');
+ylabel('x(n-2)');
+h=n-3; z=x;
+subplot(3,1,3);
+stem(h,z);
+xlabel('n');
+ylabel('x(n+3)');
